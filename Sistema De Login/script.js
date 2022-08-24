@@ -19,7 +19,20 @@ while(choice){
         var names2 = prompt("Qual seu usuário ?")
         var password2 = prompt("Qual sua Senha ?")
         for(var contador2 = 0; contador2 < names.length; contador2++){
+            
+            if(names2 == names[comparador] && password2 == password[comparador]){
+                alert("Login Efetuado com sucesso !")  
+            }
+
+            if(names2 != names[comparador] && password2 != password[comparador]){
+                comparador++
+            }
         }
+
+        if(names2 != names[comparador] || password2 != password[comparador]){
+            alert("Usuário ou Senha incorretos")
+        }
+
     }
     
     if(choice == "3"){
