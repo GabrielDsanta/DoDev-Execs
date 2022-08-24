@@ -39,6 +39,24 @@ while(choice){
         choice = false
     }
 
+    if(choice == "4"){
+        var base = 0
+
+        var finder = prompt("Qual o seu Usuário ?")
+        for(var contador3 = 0; contador3 < user.length; contador3++){
+            if(finder == user[base]){
+                user[base] = user[base + 1]
+                senha[base] = senha[base + 1]
+                user.length--
+                senha.length--
+            }
+            else{
+                base++
+            }
+        }
+        
+    }
+
 }
 
 console.log(names, password)
