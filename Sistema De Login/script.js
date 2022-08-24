@@ -11,6 +11,11 @@ while(choice){
     password[index] = prompt("Digite ssua Senha")
 
     index++
+
+    choice = prompt("Deseja continuar ?")
+    if(choice == "Não"){
+        choice = false
+    }
 }
 
 console.log(names, password)
