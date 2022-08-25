@@ -61,3 +61,4 @@ if(saldoTotal < 0){
 console.log("O Saldo Total É: " ,saldoTotal)
 console.log("O Maior Valor Inserido Foi: " ,maiorValor)
 console.log("A média dos valores inseridos foi: " ,parseInt(media))
+console.log(`O ${nome} De CPF: ${cpf} Inseriu os valores: ${valores} `)
